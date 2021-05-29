@@ -103,3 +103,101 @@
     height: 112px;
     background: no-repeat url("../img/album.png") center/cover;
 }
+
+.profile {
+    display: inline-block;
+}
+
+.slider {
+    padding: 92px 50px 48px;
+    color: #fff;
+    background: no-repeat url('../img/slider.png') center/cover;
+}
+
+.slider__category {
+    font-size: 10px;
+    line-height: 14px;
+    margin: 0 0 7px 0;
+}
+
+.slider__heading {
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 30px;
+    margin: 0 0 7px 0;
+}
+
+.slider__song {
+    font-size: 16px;
+    line-height: 14px;
+}
+
+.slider__wrapper {
+    margin: 0 0 43px;
+}
+
+.slider__buttons {
+    display: flex;
+}
+
+.slider__buttons > button {
+    border: none;
+    border-radius: 3px;
+    color: #E6152B;
+    text-transform: uppercase;
+    font-size: 10px;
+    padding: 5px 10px;
+    margin: 0 10px 0 0;
+}
+
+.slider__buttons_share {
+    padding: 3px 10px;
+}
+
+.slider__buttons svg path {
+    fill: #E6152B;
+}
+
+.albums {
+    padding: 24px 0 24px 20px;
+}
+
+.albums__wrapper {
+    display: flex;
+    overflow-x: scroll;
+}
+
+.albums__wrapper::-webkit-scrollbar {
+    display: none;
+}
+
+.album {
+    flex-shrink: 0;
+    margin: 0 20px 0 0;
+}
+
+.albums > h3 {
+    font-size: 16px;
+    line-height: 22px;
+    margin: 0 0 14px 0;
+}
+
+.album__img {
+    margin: 0 0 7px 0;
+}
+
+.album > h5 {
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.album > span {
+    font-size: 10px;
+    line-height: 14px;
+    opacity: 0.48;
+}
+
+.tracks__header {
+    display: flex;
+    justify-content: space-between;
+}
