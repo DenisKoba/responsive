@@ -1,0 +1,23 @@
+@mixin prefix($property, $value) {
+  #{'-o-' + $property}: $value;
+  #{'-moz-' + $property}: $value;
+  #{'-webkit-' + $property}: $value;
+}
+
+$font-size: (
+        "big": 32px,
+        "medium": 22px,
+        "small": 14px,
+);
+
+$media-player: (
+        "red": red,
+        "yellow": 22px,
+        "blue": 14px,
+);
+
+%input-style {
+  border: 1px solid #f2f2f2;
+  background: white;
+  padding: 20px;
+}

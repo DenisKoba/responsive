@@ -1,8 +1,13 @@
+:root {
+    --main-bg-color: brown;
+}
+
 .content {
     margin: 0 0 0 170px;
 }
 
 .header__search {
+    background: var(--main-bg-color);
     float: left;
     border: none;
     width: 30%;

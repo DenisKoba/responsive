@@ -1,0 +1,5 @@
+@import "assets";
+
+.user {
+  @include prefix(transform, scale(1.5))
+}

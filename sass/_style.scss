@@ -1,0 +1,39 @@
+@import "assets";
+
+.album {
+  font-size: map-get($font-size, big);
+  width: calc(100% - 20px);
+}
+
+.input-form {
+  @extend %input-style;
+  color: black;
+  box-shadow: 1px 2px 3px #f2f2f2;
+}
+
+.photo {
+  @include prefix(transform, rotate(20deg))
+}
+
+$papa-bear: 1600px;
+$mama-bear: 1250px;
+$baby-bear: 650px;
+
+@mixin breakpoint($point) {
+  @if $point == $papa-bear {
+    @media (max-width: 1600px) { @content; }
+  }
+  @else if $point == $mama-bear {
+    @media (max-width: 1250px) { @content; }
+  }
+  @else if $point == $baby-bear {
+    @media (max-width: 650px)  { @content; }
+  }
+}
+
+.page-wrap {
+  width: 75%;
+  @include breakpoint(1600px) { width: 60%; }
+  @include breakpoint(1250px) { width: 80%; }
+  @include breakpoint(650px) { width: 95%; }
+}
